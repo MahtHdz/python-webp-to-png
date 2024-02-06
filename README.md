@@ -18,10 +18,26 @@ Before using this script, ensure that you have the following prerequisites insta
 - Python 3.x
 - Pillow library (PIL)
 
-You can install Pillow using pip:
+To create a virtual environment on python run:
 
 ```bash
-pip install pillow
+python -m venv venv
+
+Activate the virtual environment by running:
+
+```bash
+source venv/bin/activate
+
+If you are using Windows, run in Powershell:
+
+```bash
+venv\Scripts\Activate.ps1
+```
+
+You can install the script requirements by running:
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -30,22 +46,22 @@ pip install pillow
 2. Open your terminal or command prompt.
 3. Navigate to the directory where the script is located.
 
-```bash
-cd path/to/webp-to-png-converter
-```
+    ```bash
+    cd python-webp-to-png
+    ```
 
 4. Run the script with the following command:
 
-```bash
-python webp_to_png_converter.py input.webp output.png
-```
+    ```bash
+    python main.py input.webp output.png
+    ```
 
 Replace `input.webp` with the path to the WebP image you want to convert and `output.png` with the desired name for the converted PNG image. The converted PNG image will be saved in the same directory as the script.
 
 ## Example
 
 ```bash
-python webp_to_png_converter.py my_image.webp my_image.png
+python main.py my_image.webp my_image.png
 ```
 
 This command will convert `my_image.webp` to `my_image.png`.
