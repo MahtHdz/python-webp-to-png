@@ -22,11 +22,13 @@ To create a virtual environment on python run:
 
 ```bash
 python -m venv venv
+```
 
 Activate the virtual environment by running:
 
 ```bash
 source venv/bin/activate
+```
 
 If you are using Windows, run in Powershell:
 
